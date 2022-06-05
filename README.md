@@ -30,10 +30,11 @@ Located a total of 0 out of 5 required protection headers:
 ```
 
 # install
->> ``git clone https://github.com/l4tt/uscan/uscan.git``
->> ``pip install google`` 
->> ``python3 Uscan.py``
-
+```sh
+>> git clone https://github.com/l4tt/uscan/uscan.git
+>> pip install google
+>> python3 Uscan.py
+```
 # info
 * uscan is defined as universal scanner, it was made to target (Wordpress,Joomla,Druple,Vbulletin) systems.
 * uscan identifys vulns in a target VIA automation, this is basically Vulnnr but better
