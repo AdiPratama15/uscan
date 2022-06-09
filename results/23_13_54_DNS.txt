@@ -1,0 +1,17 @@
+[google.com] -  | DNS-A: 142.250.69.238
+[google.com] -  | DNS-MX: 10 smtp.google.com.
+[google.com] -  | DNS-TXT: "facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95"
+[google.com] -  | DNS-TXT: "MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB"
+[google.com] -  | DNS-TXT: "google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o"
+[google.com] -  | DNS-TXT: "webexdomainverification.8YX6G=6e6922db-e3e6-4a36-904e-a805c28087fa"
+[google.com] -  | DNS-TXT: "docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e"
+[google.com] -  | DNS-TXT: "globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8="
+[google.com] -  | DNS-TXT: "google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ"
+[google.com] -  | DNS-TXT: "atlassian-domain-verification=5YjTmWmjI92ewqkx2oXmBaD60Td9zWon9r6eakvHX6B77zzkFQto8PQ9QsKnbf4I"
+[google.com] -  | DNS-TXT: "apple-domain-verification=30afIBcvSuDV2PLX"
+[google.com] -  | DNS-TXT: "v=spf1 include:_spf.google.com ~all"
+[google.com] -  | DNS-TXT: "docusign=1b0a6754-49b1-4db5-8540-d2c12664b289"
+[google.com] -  | DNS-NS: ns3.google.com.
+[google.com] -  | DNS-NS: ns2.google.com.
+[google.com] -  | DNS-NS: ns4.google.com.
+[google.com] -  | DNS-NS: ns1.google.com.

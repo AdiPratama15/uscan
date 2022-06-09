@@ -1,0 +1,11 @@
+HTTPSConnectionPool(host='localhost', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd11e31c370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+HTTPSConnectionPool(host='roobet.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:997)')))
+list index out of range
+list index out of range
+list index out of range
+name '__seed__' is not defined
+HTTPSConnectionPool(host='rain-kys.xyz', port=443): Read timed out. (read timeout=2)
+cannot use a string pattern on a bytes-like object
+[Errno -2] Name or service not known
+string indices must be integers
+HTTPSConnectionPool(host='onetap.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f62f6610b80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))

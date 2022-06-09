@@ -1,5 +1,7 @@
-import requests, re
+import requests
+import re
 from Modules.colors import Colors
+from Modules.func.log import con_log, url_log
 
 class CmsDetector():
     """
@@ -37,39 +39,48 @@ class CmsDetector():
     
     
     def __init__(self: object, site: str) -> None:
+        
         match self.Detect(site):
             case 'Wordpress':
-                self.con_log("Cms: ", True, "Wordpress")
-                
+                con_log("Cms: ", True, "Wordpress")
+                url_log('Wordpress', 'detect', 'cms')
                 if self.wp_version(site):
-                    self.con_log("Version: ", True, self.wp_version(site))
+                    con_log("Version: ", True, self.wp_version(site))
+                    url_log(self.wp_version(site), 'detect', 'version')
                 else:
-                    self.con_log("Version: ", False, self.wp_version(site))
+                    con_log("Version: ", False, self.wp_version(site))
                 
                 if self.wp_themes(site):
-                    self.con_log("Themes: ", True, self.wp_themes(site))
+                    con_log("Themes: ", True, self.wp_themes(site))
+                    url_log(self.wp_themes(site), 'detect', 'themes')
                 else:
-                    self.con_log("Themes: ", False, self.wp_themes(site))
+                    con_log("Themes: ", False, self.wp_themes(site))
                 
                 if self.wp_user(site):
-                    self.con_log("Users: ", True, self.wp_user(site))
+                    con_log("Users: ", True, self.wp_user(site))
+                    url_log(self.wp_user(site), 'detect', 'users')
                 else:
-                    self.con_log("Users: ", False, self.wp_user(site))
+                    con_log("Users: ", False, self.wp_user(site))
                     
                 if self.wp_plugin(site):
-                    self.con_log("Plugins: ", True, self.wp_plugin(site))
+                    con_log("Plugins: ", True, self.wp_plugin(site))
+                    url_log(self.wp_plugin(site), 'detect', 'plugin')
                 else:
-                    self.con_log("Plugins: ", False, self.wp_plugin(site))
+                    con_log("Plugins: ", False, self.wp_plugin(site))
                 
             case 'Joomla':
-                return self.con_log("CMS: ", True, "Joomla")
+                url_log('Joomla', 'detect', 'cms')
+                return con_log("CMS: ", True, "Joomla")
                 
             case 'Druple':
-                return self.con_log("CMS: ", True, "Druple")
+                url_log('Druple', 'detect', 'cms')
+                return con_log("CMS: ", True, "Druple")
             case 'Bullet':
-                return self.con_log("CMS: ", True, "VBulletin")
+                url_log('VBulletin', 'detect', 'cms')
+                return con_log("CMS: ", True, "VBulletin")
             case _:
-                return self.con_log("CMS: ", False, "Not found")
+                url_log('Not found', 'detect', 'cms')
+                return con_log("CMS: ", False, "Not found")
     
     def Detect(self: object, site: str) -> None:
         WRead = requests.get(site + "/", timeout=5, headers=self.Headers).content
@@ -141,9 +152,3 @@ class CmsDetector():
             for i in range(len(plugins_array)):
                 return plugins_array[i]
     
-    def con_log(self: object, text: str, status: bool, data: str) -> None:
-        if status == True:
-            print(f"{text}{Colors.BRIGHT}{Colors.GREEN}✓{Colors.WHITE} -> {data}")
-        else:
-            print(f"{text}{Colors.BRIGHT}{Colors.RED2}✘{Colors.WHITE} -> Not found")
-

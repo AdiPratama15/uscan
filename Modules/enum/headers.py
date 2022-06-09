@@ -3,6 +3,9 @@ from Modules.colors import Colors
 
 
 class HeaderModule:
+    """
+    Headers scanner for protection verification, this isn't required but it's a good idea to have it 
+    """
     required = [
         "Strict-Transport-Security",
         "Content-Security-Policy",
@@ -19,7 +22,7 @@ class HeaderModule:
         """
         Suggest you should take a look at the documentation for these protection headers
         DOCS: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html 
-        """
+      have  """
         
         print(f'Located a total of {Colors.GREEN}{len(located)}{Colors.WHITE} out of {Colors.RED2}{len(self.required)}{Colors.WHITE} required protection headers:')
         

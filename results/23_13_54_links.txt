@@ -1,0 +1,11 @@
+http://schema.org/WebPage"
+https://www.google.com/imghp?hl=en&tab=wi">Images</a>
+https://maps.google.com/maps?hl=en&tab=wl">Maps</a>
+https://play.google.com/?hl=en&tab=w8">Play</a>
+https://www.youtube.com/?gl=US&tab=w1">YouTube</a>
+https://news.google.com/?tab=wn">News</a>
+https://mail.google.com/mail/?tab=wm">Gmail</a>
+https://drive.google.com/?tab=wo">Drive</a>
+https://www.google.com/intl/en/about/products?tab=wh"><u>More</u>
+http://www.google.com/history/optout?hl=en"
+https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ"

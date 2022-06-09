@@ -1,0 +1,9 @@
+[youtube.com] -  | DNS-A: 142.250.72.14
+[youtube.com] -  | DNS-MX: 0 smtp.google.com.
+[youtube.com] -  | DNS-TXT: "google-site-verification=QtQWEwHWM8tHiJ4s-jJWzEQrD_fF3luPnpzNDH-Nw-w"
+[youtube.com] -  | DNS-TXT: "facebook-domain-verification=64jdes7le4h7e7lfpi22rijygx58j1"
+[youtube.com] -  | DNS-TXT: "v=spf1 include:google.com mx -all"
+[youtube.com] -  | DNS-NS: ns1.google.com.
+[youtube.com] -  | DNS-NS: ns2.google.com.
+[youtube.com] -  | DNS-NS: ns4.google.com.
+[youtube.com] -  | DNS-NS: ns3.google.com.
