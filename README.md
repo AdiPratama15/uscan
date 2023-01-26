@@ -53,7 +53,7 @@ Links log saved at 23:20:03, location: results/23_20_03_links.txt
 
 # install
 ```sh
->> git clone git clone https://github.com/l4tt/uscan.git
+>> git clone https://github.com/l4tt/uscan.git
 >> pip install google
 >> python3 Uscan.py
 ```
